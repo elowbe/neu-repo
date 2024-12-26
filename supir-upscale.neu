@@ -1,0 +1,814 @@
+{"nodes": [
+    {
+        "attributes": [
+            {
+                "connected": {"label": ""},
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {"label": ""},
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "images",
+                "ioState": "output",
+                "type": "java.util.ArrayList",
+                "required": true
+            },
+            {
+                "label": "image-0",
+                "ioState": "output",
+                "type": "java.awt.image.BufferedImage",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "outputImage",
+                    "nodeID": -205914006
+                },
+                "label": "2.(LoadImage): image",
+                "ioState": "input",
+                "type": "java.awt.image.BufferedImage",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "2.(LoadImage): upload",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "5.(SUPIR_first_stage): encoder_tile_size",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "5.(SUPIR_first_stage): decoder_tile_size",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "5.(SUPIR_first_stage): encoder_dtype",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "5.(SUPIR_first_stage): use_tiled_vae",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": -1825439633
+                },
+                "label": "7.(SUPIR_sample): seed",
+                "ioState": "input",
+                "type": "java.lang.Long",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "7.(SUPIR_sample): cfg_scale_end",
+                "ioState": "input",
+                "type": "java.lang.Double",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "7.(SUPIR_sample): s_noise",
+                "ioState": "input",
+                "type": "java.lang.Double",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "7.(SUPIR_sample): steps",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "7.(SUPIR_sample): control_scale_end",
+                "ioState": "input",
+                "type": "java.lang.Double",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "7.(SUPIR_sample): sampler",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "7.(SUPIR_sample): keep_model_loaded",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "7.(SUPIR_sample): control_scale_start",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "7.(SUPIR_sample): sampler_tile_stride",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "7.(SUPIR_sample): EDM_s_churn",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "7.(SUPIR_sample): DPMPP_eta",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "7.(SUPIR_sample): cfg_scale_start",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "7.(SUPIR_sample): restore_cfg",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "7.(SUPIR_sample): sampler_tile_size",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "9.(SUPIR_conditioner): negative_prompt",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": 1545535595
+                },
+                "label": "9.(SUPIR_conditioner): positive_prompt",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "10.(SUPIR_decode): decoder_tile_size",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "10.(SUPIR_decode): use_tiled_vae",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "11.(SUPIR_encode): encoder_tile_size",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "11.(SUPIR_encode): encoder_dtype",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "11.(SUPIR_encode): use_tiled_vae",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "14.(ColorMatch): method",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "14.(ColorMatch): strength",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "21.(SUPIR_model_loader_v2): high_vram",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "21.(SUPIR_model_loader_v2): diffusion_dtype",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "21.(SUPIR_model_loader_v2): fp8_unet",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "21.(SUPIR_model_loader_v2): supir_model",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "22.(CheckpointLoaderSimple): ckpt_name",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "23.(SaveImage): filename_prefix",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            }
+        ],
+        "id": 2101608548,
+        "class": "com.loom.graph.nodes.AutoComfyUIWorkflowNode",
+        "properties": {
+            "quick_23.(SaveImage): filename_prefix": "SUPIR",
+            "quick_7.(SUPIR_sample): restore_cfg": 1,
+            "quick_7.(SUPIR_sample): s_noise": 1.0030000000000001,
+            "quick_7.(SUPIR_sample): cfg_scale_start": 2,
+            "quick_5.(SUPIR_first_stage): decoder_tile_size": 512,
+            "quick_7.(SUPIR_sample): control_scale_end": 0.9,
+            "quick_21.(SUPIR_model_loader_v2): supir_model": "SUPIR-v0F.ckpt",
+            "quick_5.(SUPIR_first_stage): use_tiled_vae": true,
+            "quick_7.(SUPIR_sample): keep_model_loaded": false,
+            "quick_5.(SUPIR_first_stage): encoder_tile_size": 512,
+            "title": "supir_upscale.json",
+            "quick_7.(SUPIR_sample): control_scale_start": 1,
+            "quick_9.(SUPIR_conditioner): positive_prompt": "high quality, detailed, photograph of an old man",
+            "quick_11.(SUPIR_encode): use_tiled_vae": true,
+            "quick_2.(LoadImage): upload": "image",
+            "quick_7.(SUPIR_sample): steps": 20,
+            "quick_11.(SUPIR_encode): encoder_tile_size": 512,
+            "quick_enabled": true,
+            "quick_9.(SUPIR_conditioner): negative_prompt": "mirror, reflection, perfect skin, smooth skin, low quality",
+            "quick_7.(SUPIR_sample): DPMPP_eta": 1,
+            "quick_10.(SUPIR_decode): use_tiled_vae": true,
+            "quick_22.(CheckpointLoaderSimple): ckpt_name": "juggernautXL_juggXIByRundiffusion.safetensors",
+            "quick_5.(SUPIR_first_stage): encoder_dtype": "auto",
+            "quick_7.(SUPIR_sample): cfg_scale_end": 1.5,
+            "quick_7.(SUPIR_sample): sampler_tile_size": 1024,
+            "workflow": {
+                "11": {
+                    "class_type": "SUPIR_encode",
+                    "inputs": {
+                        "image": [
+                            "5",
+                            1
+                        ],
+                        "encoder_tile_size": 512,
+                        "encoder_dtype": "auto",
+                        "use_tiled_vae": true,
+                        "SUPIR_VAE": [
+                            "5",
+                            0
+                        ]
+                    },
+                    "_meta": {"title": "SUPIR Encode"}
+                },
+                "22": {
+                    "class_type": "CheckpointLoaderSimple",
+                    "inputs": {"ckpt_name": "dreamshaperXL_lightningDPMSDE.safetensors"},
+                    "_meta": {"title": "Load Checkpoint"}
+                },
+                "23": {
+                    "class_type": "SaveImage",
+                    "inputs": {
+                        "filename_prefix": "SUPIR",
+                        "images": [
+                            "14",
+                            0
+                        ]
+                    },
+                    "_meta": {"title": "Save Image"}
+                },
+                "2": {
+                    "class_type": "LoadImage",
+                    "inputs": {
+                        "image": "dragon.png",
+                        "upload": "image"
+                    },
+                    "_meta": {"title": "Load Image"}
+                },
+                "14": {
+                    "class_type": "ColorMatch",
+                    "inputs": {
+                        "image_ref": [
+                            "2",
+                            0
+                        ],
+                        "method": "mkl",
+                        "strength": 1,
+                        "image_target": [
+                            "10",
+                            0
+                        ]
+                    },
+                    "_meta": {"title": "Color Match"}
+                },
+                "5": {
+                    "class_type": "SUPIR_first_stage",
+                    "inputs": {
+                        "image": [
+                            "2",
+                            0
+                        ],
+                        "encoder_tile_size": 512,
+                        "decoder_tile_size": 512,
+                        "encoder_dtype": "auto",
+                        "use_tiled_vae": true,
+                        "SUPIR_VAE": [
+                            "21",
+                            1
+                        ]
+                    },
+                    "_meta": {"title": "SUPIR First Stage (Denoiser)"}
+                },
+                "7": {
+                    "class_type": "SUPIR_sample",
+                    "inputs": {
+                        "seed": 174277455657960,
+                        "cfg_scale_end": 1.5,
+                        "s_noise": 1.0030000000000001,
+                        "positive": [
+                            "9",
+                            0
+                        ],
+                        "steps": 10,
+                        "control_scale_end": 0.9,
+                        "sampler": "RestoreDPMPP2MSampler",
+                        "keep_model_loaded": false,
+                        "control_scale_start": 1,
+                        "SUPIR_model": [
+                            "21",
+                            0
+                        ],
+                        "negative": [
+                            "9",
+                            1
+                        ],
+                        "sampler_tile_stride": 512,
+                        "EDM_s_churn": 5,
+                        "DPMPP_eta": 1,
+                        "cfg_scale_start": 2,
+                        "restore_cfg": 1,
+                        "sampler_tile_size": 1024,
+                        "latents": [
+                            "11",
+                            0
+                        ]
+                    },
+                    "_meta": {"title": "SUPIR Sampler"}
+                },
+                "9": {
+                    "class_type": "SUPIR_conditioner",
+                    "inputs": {
+                        "SUPIR_model": [
+                            "21",
+                            0
+                        ],
+                        "negative_prompt": "bad quality, blurry, messy",
+                        "positive_prompt": "high quality, detailed, photograph of an old man",
+                        "latents": [
+                            "5",
+                            2
+                        ]
+                    },
+                    "_meta": {"title": "SUPIR Conditioner"}
+                },
+                "10": {
+                    "class_type": "SUPIR_decode",
+                    "inputs": {
+                        "decoder_tile_size": 512,
+                        "use_tiled_vae": true,
+                        "SUPIR_VAE": [
+                            "21",
+                            1
+                        ],
+                        "latents": [
+                            "7",
+                            0
+                        ]
+                    },
+                    "_meta": {"title": "SUPIR Decode"}
+                },
+                "21": {
+                    "class_type": "SUPIR_model_loader_v2",
+                    "inputs": {
+                        "high_vram": false,
+                        "diffusion_dtype": "auto",
+                        "model": [
+                            "22",
+                            0
+                        ],
+                        "fp8_unet": false,
+                        "vae": [
+                            "22",
+                            2
+                        ],
+                        "supir_model": "SUPIR-v0F.ckpt",
+                        "clip": [
+                            "22",
+                            1
+                        ]
+                    },
+                    "_meta": {"title": "SUPIR Model Loader (v2)"}
+                }
+            },
+            "quick_10.(SUPIR_decode): decoder_tile_size": 512,
+            "quick_21.(SUPIR_model_loader_v2): diffusion_dtype": "auto",
+            "quick_11.(SUPIR_encode): encoder_dtype": "auto",
+            "quick_14.(ColorMatch): strength": 1,
+            "quick_2.(LoadImage): image": "",
+            "quick_7.(SUPIR_sample): EDM_s_churn": 5,
+            "quick_21.(SUPIR_model_loader_v2): high_vram": false,
+            "quick_14.(ColorMatch): method": "mkl",
+            "x": -715.7367,
+            "y": -1311.102,
+            "quick_7.(SUPIR_sample): seed": 567688168,
+            "quick_7.(SUPIR_sample): sampler": "RestoreDPMPP2MSampler",
+            "quick_7.(SUPIR_sample): sampler_tile_stride": 512,
+            "quick_21.(SUPIR_model_loader_v2): fp8_unet": false
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": -1411973012
+                },
+                "label": "inputImage",
+                "ioState": "input",
+                "type": "java.awt.image.BufferedImage",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": -900267923
+                },
+                "label": "scaleFactor",
+                "ioState": "input",
+                "type": "java.lang.Double",
+                "required": true
+            },
+            {
+                "label": "outputImage",
+                "ioState": "output",
+                "type": "java.awt.image.BufferedImage",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": false
+            }
+        ],
+        "id": -205914006,
+        "class": "com.loom.graph.nodes.ScaleImageNode",
+        "properties": {
+            "quick_scaleFactor": 0,
+            "x": -1344.8365,
+            "y": -1323.8699,
+            "quick_inputImage": "",
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": true
+            }
+        ],
+        "id": 1545535595,
+        "class": "com.loom.graph.nodes.ModuleInputNode",
+        "properties": {
+            "quick_value": "",
+            "x": -1316.3549,
+            "y": 575.652,
+            "label": "prompt",
+            "quick_enabled": true,
+            "type": "java.lang.String"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "java.awt.image.BufferedImage",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.awt.image.BufferedImage",
+                "required": true
+            }
+        ],
+        "id": -1411973012,
+        "class": "com.loom.graph.nodes.ModuleInputNode",
+        "properties": {
+            "quick_value": "",
+            "x": -1984.4633,
+            "y": -1306.8059,
+            "label": "image",
+            "quick_enabled": true,
+            "type": "java.awt.image.BufferedImage"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "java.lang.Double",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.Double",
+                "required": true
+            }
+        ],
+        "id": -900267923,
+        "class": "com.loom.graph.nodes.ModuleInputNode",
+        "properties": {
+            "quick_value": 0,
+            "x": -1983.6996,
+            "y": -996.47327,
+            "label": "scale",
+            "quick_enabled": true,
+            "type": "java.lang.Double"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "image-0",
+                    "nodeID": 2101608548
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "java.awt.image.BufferedImage",
+                "required": false
+            }
+        ],
+        "id": 1975844974,
+        "class": "com.loom.graph.nodes.ModuleOutputNode",
+        "properties": {
+            "quick_value": "",
+            "x": 486.64795,
+            "y": -1339.7677,
+            "label": "upscaled",
+            "quick_enabled": true,
+            "type": "java.awt.image.BufferedImage"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.Double",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "min",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "max",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            }
+        ],
+        "id": -1825439633,
+        "class": "com.loom.graph.nodes.RandomIntegerNode",
+        "properties": {
+            "x": -1342.4523,
+            "y": -889.52155,
+            "quick_enabled": true,
+            "quick_min": 0,
+            "quick_max": 2147483646
+        }
+    }
+]}

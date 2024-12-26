@@ -1,0 +1,496 @@
+{"nodes": [
+    {
+        "attributes": [
+            {
+                "label": "processed-output",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "input",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": false
+            }
+        ],
+        "id": 810090515,
+        "class": "com.loom.graph.nodes.TextNode",
+        "properties": {
+            "quick_input": "Example:\nuser: enhance \"panning shot of cityscape,\nskyscrapers, circular building in the\ncenter\"\nAssistant:The camera pans across a cityscape of tall\nbuildings with a circular building in the\ncenter. The camera moves from left to right,\nshowing the tops of the buildings and the\ncircular building in the center. The\nbuildings are various shades of gray and\nwhite, and the circular building has a green\nroof. The camera angle is high, looking down\nat the city. The lighting is bright, with\nthe sun shining from the upper left, casting\nshadows from the buildings. The scene is\ncomputer-generated imagery.\n\nuser: enhance \"a shot of a woman in period clothing, having a introspective moment in a busy\npark\"\nAssistant:A woman with light skin, wearing a blue jacket\nand a black hat with a veil, looks down and\nto her right, then back up as she speaks;\nshe has brown hair styled in an updo, light\nbrown eyebrows, and is wearing a white\ncollared shirt under her jacket; the camera\nremains stationary on her face as she\nspeaks; the background is out of focus, but\nshows trees and people in period clothing;\nthe scene is captured in real-life footage.\n\nuser: enhance: \"a man in a suit has a solemn meeting with his wife and friend in his living\nroom\"\nA man in a suit enters a room and speaks to two women sitting on a couch. The man, wearing a\ndark suit with a gold tie, enters the room from the left and walks towards the center of the\nframe. He has short gray hair, light skin, and a serious expression. He places his right hand\non the back of a chair as he approaches the couch. Two women are seated on a light-colored\ncouch in the background. The woman on the left wears a light blue sweater and has short blonde\nhair. The woman on the right wears a white sweater and has short blonde hair. The camera\nremains stationary, focusing on the man as he enters the room. The room is brightly lit, with\nwarm tones reflecting off the walls and furniture. The scene appears to be from a film or\ntelevision show.\n\nInstructions:\nYou are a machine that enhanes prompts.\nRespond only with the enhanced prompt.\nThese prompts will be used for video\ngeneration.\nInclude direction and camera movements.",
+            "x": -3379.021,
+            "y": -1753.499,
+            "text": "",
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": 1686700158
+                },
+                "label": "claude",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "claude_api",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": -1500446677
+                },
+                "label": "prompt",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": 810090515
+                },
+                "label": "system",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "chatlog",
+                "ioState": "input",
+                "type": "java.util.ArrayList",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "temp",
+                "ioState": "input",
+                "type": "java.lang.Double",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "tokens",
+                "ioState": "input",
+                "type": "java.lang.Double",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "model",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "label": "enhanced_prompt",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": true
+            }
+        ],
+        "id": 2042888212,
+        "class": "com.loom.graph.nodes.ModuleNode",
+        "properties": {
+            "quick_model": "openhermes",
+            "origin": "C:\\Users\\elowbe-server\\eclipse-workspace\\Neu\\projects\\ez-chat.neu",
+            "quick_chatlog": "",
+            "title": "ez-chat.neu",
+            "graph": "{\"nodes\": [\n    {\n        \"attributes\": [\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"value\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"label\": \"output\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": true\n            }\n        ],\n        \"id\": -1672347400,\n        \"class\": \"com.loom.graph.nodes.ModuleInputNode\",\n        \"properties\": {\n            \"quick_value\": false,\n            \"x\": 452.54684,\n            \"y\": 108.57906,\n            \"label\": \"claude\",\n            \"quick_enabled\": true,\n            \"type\": \"java.lang.Boolean\"\n        }\n    },\n    {\n        \"attributes\": [\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"value\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.String\",\n                \"required\": false\n            },\n            {\n                \"label\": \"output\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.String\",\n                \"required\": true\n            }\n        ],\n        \"id\": -1122696967,\n        \"class\": \"com.loom.graph.nodes.ModuleInputNode\",\n        \"properties\": {\n            \"quick_value\": \"\",\n            \"x\": -1867.7667,\n            \"y\": 338.71835,\n            \"label\": \"claude_api\",\n            \"quick_enabled\": true,\n            \"type\": \"java.lang.String\"\n        }\n    },\n    {\n        \"attributes\": [\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": -1672347400\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": -1936588536\n                },\n                \"label\": \"apiKey\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.String\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": -1489239811\n                },\n                \"label\": \"message\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.String\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": -2065498065\n                },\n                \"label\": \"system\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.String\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": -991952848\n                },\n                \"label\": \"chatlog\",\n                \"ioState\": \"input\",\n                \"type\": \"org.json.JSONArray\",\n                \"required\": false\n            },\n            {\n                \"label\": \"aiMessage\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.String\",\n                \"required\": false\n            },\n            {\n                \"label\": \"newChatlog\",\n                \"ioState\": \"output\",\n                \"type\": \"org.json.JSONArray\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": 1801912370\n                },\n                \"label\": \"maxTokens\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Integer\",\n                \"required\": false\n            }\n        ],\n        \"id\": -211484421,\n        \"class\": \"com.loom.graph.nodes.ClaudeChatNode\",\n        \"properties\": {\n            \"quick_system\": \"\",\n            \"quick_apiKey\": \"\",\n            \"x\": 2041.3196,\n            \"quick_chatlog\": \"\",\n            \"y\": 52.41972,\n            \"quick_maxTokens\": 100,\n            \"quick_message\": \"\",\n            \"quick_enabled\": true\n        }\n    },\n    {\n        \"attributes\": [\n            {\n                \"label\": \"processed-output\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.String\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"input\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.String\",\n                \"required\": false\n            },\n            {\n                \"label\": \"output\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.String\",\n                \"required\": false\n            }\n        ],\n        \"id\": 482738428,\n        \"class\": \"com.loom.graph.nodes.TextNode\",\n        \"properties\": {\n            \"quick_input\": \"prompt:<<prompt>>\",\n            \"x\": 604.7481,\n            \"y\": 661.5466,\n            \"text\": \"\",\n            \"quick_enabled\": true\n        }\n    },\n    {\n        \"attributes\": [\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"output\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.String\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": 482738428\n                },\n                \"label\": \"input\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.String\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"target\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.String\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": -138084098\n                },\n                \"label\": \"replacement\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.String\",\n                \"required\": true\n            }\n        ],\n        \"id\": -1489239811,\n        \"class\": \"com.loom.graph.nodes.StringReplaceNode\",\n        \"properties\": {\n            \"quick_target\": \"<<prompt>>\",\n            \"quick_input\": \"\",\n            \"x\": 1279.4105,\n            \"quick_replacement\": \"\",\n            \"y\": 790.56055,\n            \"quick_enabled\": true\n        }\n    },\n    {\n        \"attributes\": [\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"value\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.String\",\n                \"required\": false\n            },\n            {\n                \"label\": \"output\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.String\",\n                \"required\": true\n            }\n        ],\n        \"id\": -138084098,\n        \"class\": \"com.loom.graph.nodes.ModuleInputNode\",\n        \"properties\": {\n            \"quick_value\": \"enhance \\\"a person\\\"\",\n            \"x\": 335.42078,\n            \"y\": 1176.4076,\n            \"label\": \"prompt\",\n            \"quick_enabled\": true,\n            \"type\": \"java.lang.String\"\n        }\n    },\n    {\n        \"attributes\": [\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": 1018364160\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": -432799294\n                },\n                \"label\": \"model\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.String\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": -1489239811\n                },\n                \"label\": \"message\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.String\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": -2065498065\n                },\n                \"label\": \"system\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.String\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": -991952848\n                },\n                \"label\": \"chatlog\",\n                \"ioState\": \"input\",\n                \"type\": \"org.json.JSONArray\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"image(s)\",\n                \"ioState\": \"input\",\n                \"type\": \"java.awt.image.BufferedImage\",\n                \"required\": false\n            },\n            {\n                \"label\": \"aiMessage\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.String\",\n                \"required\": false\n            },\n            {\n                \"label\": \"newChatlog\",\n                \"ioState\": \"output\",\n                \"type\": \"org.json.JSONArray\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"stop\",\n                \"ioState\": \"input\",\n                \"type\": \"org.json.JSONArray\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": 918224945\n                },\n                \"label\": \"temperature\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Double\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": 1801912370\n                },\n                \"label\": \"maxTokens\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Integer\",\n                \"required\": false\n            }\n        ],\n        \"id\": 634061055,\n        \"class\": \"com.loom.graph.nodes.OllamaChatCompletionNode\",\n        \"properties\": {\n            \"quick_system\": \"\",\n            \"quick_model\": \"openhermes\",\n            \"quick_image(s)\": \"\",\n            \"quick_temperature\": 0.8,\n            \"x\": 2033.9519,\n            \"quick_chatlog\": \"\",\n            \"y\": 664.6657,\n            \"quick_stop\": \"\",\n            \"quick_maxTokens\": 100,\n            \"quick_message\": \"\",\n            \"quick_enabled\": true\n        }\n    },\n    {\n        \"attributes\": [\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": -1672347400\n                },\n                \"label\": \"input\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": true\n            },\n            {\n                \"label\": \"output\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            }\n        ],\n        \"id\": 1018364160,\n        \"class\": \"com.loom.graph.nodes.NotNode\",\n        \"properties\": {\n            \"quick_input\": false,\n            \"x\": 1379.4783,\n            \"y\": 387.48047,\n            \"quick_enabled\": true\n        }\n    },\n    {\n        \"attributes\": [\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": -1672347400\n                },\n                \"label\": \"condition\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\n                    \"label\": \"aiMessage\",\n                    \"nodeID\": -211484421\n                },\n                \"label\": \"trueValue\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\n                    \"label\": \"aiMessage\",\n                    \"nodeID\": 634061055\n                },\n                \"label\": \"falseValue\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"output\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"else\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            }\n        ],\n        \"id\": 1969815809,\n        \"class\": \"com.loom.graph.nodes.IfNode\",\n        \"properties\": {\n            \"quick_condition\": false,\n            \"x\": 3055.5303,\n            \"y\": 374.72162,\n            \"quick_enabled\": true\n        }\n    },\n    {\n        \"attributes\": [\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": 1969815809\n                },\n                \"label\": \"value\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.String\",\n                \"required\": false\n            }\n        ],\n        \"id\": -467730173,\n        \"class\": \"com.loom.graph.nodes.ModuleOutputNode\",\n        \"properties\": {\n            \"quick_value\": \"\",\n            \"x\": 3833.7532,\n            \"y\": 447.07294,\n            \"label\": \"enhanced_prompt\",\n            \"quick_enabled\": true,\n            \"type\": \"java.lang.String\"\n        }\n    },\n    {\n        \"attributes\": [\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"filePath\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.String\",\n                \"required\": true\n            },\n            {\n                \"label\": \"output\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            }\n        ],\n        \"id\": 633929990,\n        \"class\": \"com.loom.graph.nodes.ReadFileNode\",\n        \"properties\": {\n            \"quick_filePath\": \"data/CLAUDE_API\",\n            \"x\": -1520.4265,\n            \"y\": 1000.19226,\n            \"quick_enabled\": true\n        }\n    },\n    {\n        \"attributes\": [\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": -1122696967\n                },\n                \"label\": \"input\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.String\",\n                \"required\": true\n            },\n            {\n                \"label\": \"output\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            }\n        ],\n        \"id\": 1356857607,\n        \"class\": \"com.loom.graph.nodes.IsEmptyNode\",\n        \"properties\": {\n            \"quick_input\": \"\",\n            \"x\": -1066.2859,\n            \"y\": 496.31464,\n            \"quick_enabled\": true\n        }\n    },\n    {\n        \"attributes\": [\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": 1356857607\n                },\n                \"label\": \"condition\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": 633929990\n                },\n                \"label\": \"trueValue\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": -1122696967\n                },\n                \"label\": \"falseValue\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"output\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"else\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            }\n        ],\n        \"id\": -1936588536,\n        \"class\": \"com.loom.graph.nodes.IfNode\",\n        \"properties\": {\n            \"quick_condition\": false,\n            \"x\": -229.87721,\n            \"y\": 719.50903,\n            \"quick_enabled\": true\n        }\n    },\n    {\n        \"attributes\": [\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"value\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.String\",\n                \"required\": false\n            },\n            {\n                \"label\": \"output\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.String\",\n                \"required\": true\n            }\n        ],\n        \"id\": -2065498065,\n        \"class\": \"com.loom.graph.nodes.ModuleInputNode\",\n        \"properties\": {\n            \"quick_value\": \"Example:\\nuser: enhance \\\"panning shot of cityscape,\\nskyscrapers, circular building in the\\ncenter\\\"\\nAssistant:The camera pans across a cityscape of tall\\nbuildings with a circular building in the\\ncenter. The camera moves from left to right,\\nshowing the tops of the buildings and the\\ncircular building in the center. The\\nbuildings are various shades of gray and\\nwhite, and the circular building has a green\\nroof. The camera angle is high, looking down\\nat the city. The lighting is bright, with\\nthe sun shining from the upper left, casting\\nshadows from the buildings. The scene is\\ncomputer-generated imagery.\\n\\nuser: enhance \\\"a shot of a woman in period clothing, having a introspective moment in a busy\\npark\\\"\\nAssistant:A woman with light skin, wearing a blue jacket\\nand a black hat with a veil, looks down and\\nto her right, then back up as she speaks;\\nshe has brown hair styled in an updo, light\\nbrown eyebrows, and is wearing a white\\ncollared shirt under her jacket; the camera\\nremains stationary on her face as she\\nspeaks; the background is out of focus, but\\nshows trees and people in period clothing;\\nthe scene is captured in real-life footage.\\n\\nuser: enhance: \\\"a man in a suit has a solemn meeting with his wife and friend in his living\\nroom\\\"\\nA man in a suit enters a room and speaks to two women sitting on a couch. The man, wearing a\\ndark suit with a gold tie, enters the room from the left and walks towards the center of the\\nframe. He has short gray hair, light skin, and a serious expression. He places his right hand\\non the back of a chair as he approaches the couch. Two women are seated on a light-colored\\ncouch in the background. The woman on the left wears a light blue sweater and has short blonde\\nhair. The woman on the right wears a white sweater and has short blonde hair. The camera\\nremains stationary, focusing on the man as he enters the room. The room is brightly lit, with\\nwarm tones reflecting off the walls and furniture. The scene appears to be from a film or\\ntelevision show.\\n\\nInstructions:\\nYou are a machine that enhanes prompts.\\nRespond only with the enhanced prompt.\\nThese prompts will be used for video\\ngeneration.\\nInclude direction and camera movements.\",\n            \"x\": 458.08057,\n            \"y\": -958.2759,\n            \"label\": \"system\",\n            \"quick_enabled\": true,\n            \"type\": \"java.lang.String\"\n        }\n    },\n    {\n        \"attributes\": [\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"value\",\n                \"ioState\": \"input\",\n                \"type\": \"java.util.ArrayList\",\n                \"required\": false\n            },\n            {\n                \"label\": \"output\",\n                \"ioState\": \"output\",\n                \"type\": \"java.util.ArrayList\",\n                \"required\": true\n            }\n        ],\n        \"id\": -991952848,\n        \"class\": \"com.loom.graph.nodes.ModuleInputNode\",\n        \"properties\": {\n            \"quick_value\": \"\",\n            \"x\": 1213.3317,\n            \"y\": 1268.0526,\n            \"label\": \"chatlog\",\n            \"quick_enabled\": true,\n            \"type\": \"java.util.ArrayList\"\n        }\n    },\n    {\n        \"attributes\": [\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"value\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Double\",\n                \"required\": false\n            },\n            {\n                \"label\": \"output\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Double\",\n                \"required\": true\n            }\n        ],\n        \"id\": 918224945,\n        \"class\": \"com.loom.graph.nodes.ModuleInputNode\",\n        \"properties\": {\n            \"quick_value\": 0.8,\n            \"x\": 503.6787,\n            \"y\": 1581.6841,\n            \"label\": \"temp\",\n            \"quick_enabled\": true,\n            \"type\": \"java.lang.Double\"\n        }\n    },\n    {\n        \"attributes\": [\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"value\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Double\",\n                \"required\": false\n            },\n            {\n                \"label\": \"output\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Double\",\n                \"required\": true\n            }\n        ],\n        \"id\": 1801912370,\n        \"class\": \"com.loom.graph.nodes.ModuleInputNode\",\n        \"properties\": {\n            \"quick_value\": 200,\n            \"x\": 561.72565,\n            \"y\": 2024.4834,\n            \"label\": \"tokens\",\n            \"quick_enabled\": true,\n            \"type\": \"java.lang.Double\"\n        }\n    },\n    {\n        \"attributes\": [\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"value\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.String\",\n                \"required\": false\n            },\n            {\n                \"label\": \"output\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.String\",\n                \"required\": true\n            }\n        ],\n        \"id\": -432799294,\n        \"class\": \"com.loom.graph.nodes.ModuleInputNode\",\n        \"properties\": {\n            \"quick_value\": \"artifish/llama3.2-uncensored\",\n            \"x\": 1170.2964,\n            \"y\": 1695.9288,\n            \"label\": \"model\",\n            \"quick_enabled\": true,\n            \"type\": \"java.lang.String\"\n        }\n    }\n]}",
+            "quick_system": "",
+            "quick_claude": false,
+            "quick_claude_api": "",
+            "quick_tokens": 200,
+            "x": -1025.9744,
+            "y": -540.8948,
+            "quick_prompt": "",
+            "quick_temp": 0.8,
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "label": "processed-output",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "input",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": false
+            }
+        ],
+        "id": -71237591,
+        "class": "com.loom.graph.nodes.TextNode",
+        "properties": {
+            "quick_input": "enhance \"<<prompt>>\"",
+            "x": -4297.664,
+            "y": -207.39551,
+            "text": "",
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": true
+            }
+        ],
+        "id": 1618214954,
+        "class": "com.loom.graph.nodes.ModuleInputNode",
+        "properties": {
+            "quick_value": "a person",
+            "x": -3922.817,
+            "y": 305.93414,
+            "label": "prompt",
+            "quick_enabled": true,
+            "type": "java.lang.String"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": -71237591
+                },
+                "label": "input",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "target",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": 1618214954
+                },
+                "label": "replacement",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            }
+        ],
+        "id": -1500446677,
+        "class": "com.loom.graph.nodes.StringReplaceNode",
+        "properties": {
+            "quick_target": "<<prompt>>",
+            "quick_input": "",
+            "x": -2195.0464,
+            "quick_replacement": "",
+            "y": 72.37698,
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "enhanced_prompt",
+                    "nodeID": 2042888212
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": false
+            }
+        ],
+        "id": 744751166,
+        "class": "com.loom.graph.nodes.ModuleOutputNode",
+        "properties": {
+            "quick_value": "",
+            "x": 103.41284,
+            "y": 21.033077,
+            "label": "prompt_",
+            "quick_enabled": true,
+            "type": "java.lang.String"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            }
+        ],
+        "id": 1686700158,
+        "class": "com.loom.graph.nodes.ModuleInputNode",
+        "properties": {
+            "quick_value": false,
+            "x": -2195.6428,
+            "y": -321.1209,
+            "label": "use_claude",
+            "quick_enabled": true,
+            "type": "java.lang.Boolean"
+        }
+    }
+]}

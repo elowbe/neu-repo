@@ -1,0 +1,942 @@
+{"nodes": [
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "min-height",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "max-height",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "min-width",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "max-width",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": -877854500
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "camera",
+                "ioState": "input",
+                "type": "com.jinteractive.main.Camera",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "font",
+                "ioState": "input",
+                "type": "java.awt.Font",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "parent",
+                "ioState": "input",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "label": "parent_",
+                "ioState": "output",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "label": "ui",
+                "ioState": "output",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            }
+        ],
+        "id": -1259011951,
+        "class": "com.loom.graph.nodes.UiWindowNode",
+        "properties": {
+            "quick_min-height": -1,
+            "quick_max-width": -1,
+            "x": -479.2755,
+            "y": -616.04675,
+            "quick_min-width": -1,
+            "quick_enabled": true,
+            "quick_max-height": -1
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "images",
+                    "nodeID": -1585970884
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "java.util.ArrayList",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.util.ArrayList",
+                "required": true
+            }
+        ],
+        "id": 286720183,
+        "class": "com.loom.graph.nodes.ModuleInputNode",
+        "properties": {
+            "quick_value": "",
+            "x": 50,
+            "y": 617.5,
+            "label": "images",
+            "quick_enabled": true,
+            "type": "java.util.ArrayList"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {"label": ""},
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {"label": ""},
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {"label": ""},
+                "label": "camera",
+                "ioState": "input",
+                "type": "com.jinteractive.main.Camera",
+                "required": false
+            },
+            {
+                "connected": {"label": ""},
+                "label": "font",
+                "ioState": "input",
+                "type": "java.awt.Font",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "parent_",
+                    "nodeID": 379978191
+                },
+                "label": "parent",
+                "ioState": "input",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "label": "parent_",
+                "ioState": "output",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "label": "ui",
+                "ioState": "output",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": 286720183
+                },
+                "label": "images",
+                "ioState": "input",
+                "type": "java.util.ArrayList",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": -1748761692
+                },
+                "label": "columns",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": -1748630619
+                },
+                "label": "cellWidth",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": -1748630618
+                },
+                "label": "cellHeight",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": -1748565081
+                },
+                "label": "spacing",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": false
+            }
+        ],
+        "id": 379978190,
+        "class": "com.loom.graph.nodes.UiImageGridNode",
+        "properties": {
+            "quick_images": "",
+            "quick_spacing": 10,
+            "quick_cellWidth": 128,
+            "x": 2310.0002,
+            "y": 125,
+            "quick_enabled": true,
+            "quick_columns": 4,
+            "quick_cellHeight": 128
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {"label": ""},
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {"label": ""},
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {"label": ""},
+                "label": "camera",
+                "ioState": "input",
+                "type": "com.jinteractive.main.Camera",
+                "required": false
+            },
+            {
+                "connected": {"label": ""},
+                "label": "font",
+                "ioState": "input",
+                "type": "java.awt.Font",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "ui",
+                    "nodeID": -165937088
+                },
+                "label": "parent",
+                "ioState": "input",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "label": "parent_",
+                "ioState": "output",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "label": "ui",
+                "ioState": "output",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "connected": {"label": ""},
+                "label": "space",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": false
+            }
+        ],
+        "id": 379978191,
+        "class": "com.loom.graph.nodes.UiSpaceNode",
+        "properties": {
+            "x": 1544.3202,
+            "y": -79.80002,
+            "quick_enabled": true,
+            "quick_space": 25
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.Number",
+                "required": true
+            }
+        ],
+        "id": -1748761692,
+        "class": "com.loom.graph.nodes.ModuleInputNode",
+        "properties": {
+            "quick_value": 2,
+            "x": 50,
+            "y": 1127.5,
+            "label": "columns",
+            "quick_enabled": true,
+            "type": "java.lang.Number"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.Number",
+                "required": true
+            }
+        ],
+        "id": -1748630619,
+        "class": "com.loom.graph.nodes.ModuleInputNode",
+        "properties": {
+            "quick_value": 128,
+            "x": 50,
+            "y": 1637.5,
+            "label": "cellWidth",
+            "quick_enabled": true,
+            "type": "java.lang.Number"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.Number",
+                "required": true
+            }
+        ],
+        "id": -1748630618,
+        "class": "com.loom.graph.nodes.ModuleInputNode",
+        "properties": {
+            "quick_value": 128,
+            "x": 50,
+            "y": 2147.5,
+            "label": "cellHeight",
+            "quick_enabled": true,
+            "type": "java.lang.Number"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.Number",
+                "required": true
+            }
+        ],
+        "id": -1748565081,
+        "class": "com.loom.graph.nodes.ModuleInputNode",
+        "properties": {
+            "quick_value": 10,
+            "x": 50,
+            "y": 2657.5,
+            "label": "spacing",
+            "quick_enabled": true,
+            "type": "java.lang.Number"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": true
+            }
+        ],
+        "id": -2000617253,
+        "class": "com.loom.graph.nodes.ModuleInputNode",
+        "properties": {
+            "quick_value": "",
+            "x": -1867.8412,
+            "y": -156.67885,
+            "label": "parent",
+            "quick_enabled": true,
+            "type": "java.lang.String"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": -2000617253
+                },
+                "label": "input",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": false
+            }
+        ],
+        "id": -877854500,
+        "class": "com.loom.graph.nodes.IsEmptyNode",
+        "properties": {
+            "quick_input": "",
+            "x": -1151.301,
+            "y": -157.48727,
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": -877854500
+                },
+                "label": "condition",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "ui",
+                    "nodeID": -1259011951
+                },
+                "label": "trueValue",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": -2000617253
+                },
+                "label": "falseValue",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "else",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": false
+            }
+        ],
+        "id": 35717341,
+        "class": "com.loom.graph.nodes.IfNode",
+        "properties": {
+            "quick_condition": false,
+            "x": 256.44934,
+            "y": -17.41275,
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "ui",
+                    "nodeID": 379978190
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            }
+        ],
+        "id": 94372116,
+        "class": "com.loom.graph.nodes.ModuleOutputNode",
+        "properties": {
+            "x": 2987.3303,
+            "y": 119.429016,
+            "label": "grid",
+            "quick_enabled": true,
+            "type": "java.lang.Object"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "min-height",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "camera",
+                "ioState": "input",
+                "type": "com.jinteractive.main.Camera",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "font",
+                "ioState": "input",
+                "type": "java.awt.Font",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": 35717341
+                },
+                "label": "parent",
+                "ioState": "input",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "label": "parent_",
+                "ioState": "output",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "label": "ui",
+                "ioState": "output",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "max-height",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            }
+        ],
+        "id": -165937088,
+        "class": "com.loom.graph.nodes.UiColumnNode",
+        "properties": {
+            "quick_min-height": 500,
+            "x": 873.07434,
+            "y": -75.03477,
+            "quick_enabled": true,
+            "quick_max-height": 500
+        }
+    }
+]}
