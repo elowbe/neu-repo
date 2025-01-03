@@ -1,3 +1,4 @@
+dir.txt
 ez-chat.neu
 ez-enhance-prompt-sd.neu
 ez-enhance-prompt-video.neu
@@ -11,3 +12,4 @@ interpolate-video.neu
 supir-upscale.neu
 translate.neu
 upscale-video.neu
+sharpen-video.neu
