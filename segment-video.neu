@@ -1,0 +1,1503 @@
+{"nodes": [
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": true
+            }
+        ],
+        "id": 481886227,
+        "class": "com.loom.graph.nodes.ModuleInputNode",
+        "properties": {
+            "quick_value": "person",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "x": -2347.332,
+            "y": -1986.5177,
+            "label": "subject",
+            "quick_enabled": true,
+            "type": "java.lang.String"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "images",
+                "ioState": "output",
+                "type": "java.util.ArrayList",
+                "required": true
+            },
+            {
+                "label": "image-0",
+                "ioState": "output",
+                "type": "java.awt.image.BufferedImage",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "66.(DownloadAndLoadSAM2Model): precision",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "66.(DownloadAndLoadSAM2Model): model",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "66.(DownloadAndLoadSAM2Model): device",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "66.(DownloadAndLoadSAM2Model): segmentor",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "87.(Florence2Run): keep_model_loaded",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "87.(Florence2Run): output_mask_select",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "87.(Florence2Run): fill_mask",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "87.(Florence2Run): num_beams",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "87.(Florence2Run): task",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "seed_",
+                    "nodeID": -1652883435
+                },
+                "label": "87.(Florence2Run): seed",
+                "ioState": "input",
+                "type": "java.lang.Long",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": 481886227
+                },
+                "label": "87.(Florence2Run): text_input",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "87.(Florence2Run): max_new_tokens",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "87.(Florence2Run): do_sample",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "88.(DownloadAndLoadFlorence2Model): precision",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "88.(DownloadAndLoadFlorence2Model): attention",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "88.(DownloadAndLoadFlorence2Model): model",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "93.(Florence2toCoordinates): batch",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "93.(Florence2toCoordinates): index",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "102.(Sam2Segmentation): keep_model_loaded",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "102.(Sam2Segmentation): individual_objects",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "109.(VHS_LoadVideo): custom_height",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "109.(VHS_LoadVideo): force_rate",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "109.(VHS_LoadVideo): custom_width",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "109.(VHS_LoadVideo): select_every_nth",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "109.(VHS_LoadVideo): frame_load_cap",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": -209125295
+                },
+                "label": "109.(VHS_LoadVideo): video",
+                "ioState": "input",
+                "type": "com.loom.Video",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "109.(VHS_LoadVideo): skip_first_frames",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "109.(VHS_LoadVideo): force_size",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "110.(VHS_VideoCombine): save_output",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "110.(VHS_VideoCombine): filename_prefix",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "110.(VHS_VideoCombine): loop_count",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "110.(VHS_VideoCombine): pix_fmt",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "110.(VHS_VideoCombine): save_metadata",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "110.(VHS_VideoCombine): crf",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "110.(VHS_VideoCombine): trim_to_audio",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "110.(VHS_VideoCombine): format",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "110.(VHS_VideoCombine): pingpong",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "111.(VHS_VideoCombine): save_output",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "111.(VHS_VideoCombine): filename_prefix",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "111.(VHS_VideoCombine): loop_count",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "111.(VHS_VideoCombine): pix_fmt",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "111.(VHS_VideoCombine): save_metadata",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "111.(VHS_VideoCombine): crf",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "111.(VHS_VideoCombine): trim_to_audio",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "111.(VHS_VideoCombine): format",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "111.(VHS_VideoCombine): pingpong",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "114.(VHS_VideoCombine): save_output",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "114.(VHS_VideoCombine): filename_prefix",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "114.(VHS_VideoCombine): loop_count",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "114.(VHS_VideoCombine): pix_fmt",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "114.(VHS_VideoCombine): save_metadata",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "114.(VHS_VideoCombine): crf",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "114.(VHS_VideoCombine): trim_to_audio",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "114.(VHS_VideoCombine): format",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "114.(VHS_VideoCombine): pingpong",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            }
+        ],
+        "id": -561643500,
+        "class": "com.loom.graph.nodes.AutoComfyUIWorkflowNode",
+        "properties": {
+            "quick_87.(Florence2Run): text_input": "face",
+            "quick_109.(VHS_LoadVideo): custom_width": 512,
+            "quick_111.(VHS_VideoCombine): loop_count": 0,
+            "quick_111.(VHS_VideoCombine): format": "video/h264-mp4",
+            "quick_110.(VHS_VideoCombine): crf": 0,
+            "quick_111.(VHS_VideoCombine): pingpong": false,
+            "quick_109.(VHS_LoadVideo): frame_load_cap": 0,
+            "quick_110.(VHS_VideoCombine): pingpong": false,
+            "quick_110.(VHS_VideoCombine): filename_prefix": "MaskVideo",
+            "quick_114.(VHS_VideoCombine): save_metadata": false,
+            "quick_enabled": true,
+            "quick_93.(Florence2toCoordinates): index": "",
+            "quick_110.(VHS_VideoCombine): save_output": true,
+            "quick_110.(VHS_VideoCombine): format": "video/h264-mp4",
+            "quick_87.(Florence2Run): do_sample": true,
+            "quick_111.(VHS_VideoCombine): filename_prefix": "FloranceVideo",
+            "workflow": {
+                "66": {
+                    "class_type": "DownloadAndLoadSAM2Model",
+                    "inputs": {
+                        "precision": "bf16",
+                        "model": "sam2_hiera_small.safetensors",
+                        "device": "cuda",
+                        "segmentor": "video"
+                    },
+                    "_meta": {"title": "(Down)Load SAM2Model"}
+                },
+                "88": {
+                    "class_type": "DownloadAndLoadFlorence2Model",
+                    "inputs": {
+                        "precision": "fp16",
+                        "attention": "sdpa",
+                        "model": "microsoft/Florence-2-base"
+                    },
+                    "_meta": {"title": "DownloadAndLoadFlorence2Model"}
+                },
+                "110": {
+                    "class_type": "VHS_VideoCombine",
+                    "inputs": {
+                        "save_output": true,
+                        "filename_prefix": "MaskVideo",
+                        "images": [
+                            "106",
+                            0
+                        ],
+                        "loop_count": 0,
+                        "pix_fmt": "yuv420p",
+                        "save_metadata": false,
+                        "crf": 0,
+                        "trim_to_audio": false,
+                        "format": "video/h264-mp4",
+                        "frame_rate": [
+                            "113",
+                            0
+                        ],
+                        "pingpong": false
+                    },
+                    "_meta": {"title": "Video Combine 🎥🅥🅗🅢"}
+                },
+                "111": {
+                    "class_type": "VHS_VideoCombine",
+                    "inputs": {
+                        "save_output": true,
+                        "filename_prefix": "FloranceVideo",
+                        "images": [
+                            "87",
+                            0
+                        ],
+                        "loop_count": 0,
+                        "pix_fmt": "yuv420p",
+                        "save_metadata": false,
+                        "crf": 0,
+                        "trim_to_audio": false,
+                        "format": "video/h264-mp4",
+                        "frame_rate": [
+                            "113",
+                            0
+                        ],
+                        "pingpong": false
+                    },
+                    "_meta": {"title": "Video Combine 🎥🅥🅗🅢"}
+                },
+                "102": {
+                    "class_type": "Sam2Segmentation",
+                    "inputs": {
+                        "keep_model_loaded": true,
+                        "image": [
+                            "109",
+                            0
+                        ],
+                        "coordinates_positive": [
+                            "93",
+                            0
+                        ],
+                        "individual_objects": false,
+                        "sam2_model": [
+                            "66",
+                            0
+                        ]
+                    },
+                    "_meta": {"title": "Sam2Segmentation"}
+                },
+                "113": {
+                    "class_type": "VHS_VideoInfo",
+                    "inputs": {"video_info": [
+                        "109",
+                        3
+                    ]},
+                    "_meta": {"title": "Video Info 🎥🅥🅗🅢"}
+                },
+                "114": {
+                    "class_type": "VHS_VideoCombine",
+                    "inputs": {
+                        "save_output": true,
+                        "filename_prefix": "FloranceMaskVideo",
+                        "images": [
+                            "115",
+                            0
+                        ],
+                        "loop_count": 0,
+                        "pix_fmt": "yuv420p",
+                        "save_metadata": false,
+                        "crf": 0,
+                        "trim_to_audio": false,
+                        "format": "video/h264-mp4",
+                        "frame_rate": [
+                            "113",
+                            0
+                        ],
+                        "pingpong": false
+                    },
+                    "_meta": {"title": "Video Combine 🎥🅥🅗🅢"}
+                },
+                "115": {
+                    "class_type": "MaskToImage",
+                    "inputs": {"mask": [
+                        "87",
+                        1
+                    ]},
+                    "_meta": {"title": "Convert Mask to Image"}
+                },
+                "106": {
+                    "class_type": "MaskToImage",
+                    "inputs": {"mask": [
+                        "102",
+                        0
+                    ]},
+                    "_meta": {"title": "Convert Mask to Image"}
+                },
+                "93": {
+                    "class_type": "Florence2toCoordinates",
+                    "inputs": {
+                        "data": [
+                            "87",
+                            3
+                        ],
+                        "batch": false,
+                        "index": ""
+                    },
+                    "_meta": {"title": "Florence2 Coordinates"}
+                },
+                "109": {
+                    "class_type": "VHS_LoadVideo",
+                    "inputs": {
+                        "custom_height": 512,
+                        "force_rate": 0,
+                        "custom_width": 512,
+                        "select_every_nth": 1,
+                        "frame_load_cap": 0,
+                        "video": "28510050-2656-440b-b2e6-4caeecf3815e.mp4",
+                        "skip_first_frames": 0,
+                        "force_size": "Disabled"
+                    },
+                    "_meta": {"title": "Load Video (Upload) 🎥🅥🅗🅢"}
+                },
+                "87": {
+                    "class_type": "Florence2Run",
+                    "inputs": {
+                        "keep_model_loaded": false,
+                        "output_mask_select": "",
+                        "fill_mask": true,
+                        "image": [
+                            "109",
+                            0
+                        ],
+                        "num_beams": 3,
+                        "task": "caption_to_phrase_grounding",
+                        "seed": 911632034585722,
+                        "text_input": "face",
+                        "max_new_tokens": 1024,
+                        "do_sample": true,
+                        "florence2_model": [
+                            "88",
+                            0
+                        ]
+                    },
+                    "_meta": {"title": "Florence2Run"}
+                }
+            },
+            "quick_109.(VHS_LoadVideo): video": "",
+            "quick_88.(DownloadAndLoadFlorence2Model): precision": "fp16",
+            "quick_110.(VHS_VideoCombine): pix_fmt": "yuv420p",
+            "quick_114.(VHS_VideoCombine): trim_to_audio": false,
+            "quick_102.(Sam2Segmentation): keep_model_loaded": true,
+            "quick_88.(DownloadAndLoadFlorence2Model): attention": "sdpa",
+            "quick_111.(VHS_VideoCombine): save_metadata": false,
+            "quick_114.(VHS_VideoCombine): filename_prefix": "FloranceMaskVideo",
+            "quick_110.(VHS_VideoCombine): loop_count": 0,
+            "quick_66.(DownloadAndLoadSAM2Model): device": "cuda",
+            "quick_102.(Sam2Segmentation): individual_objects": false,
+            "quick_87.(Florence2Run): output_mask_select": "",
+            "quick_87.(Florence2Run): keep_model_loaded": false,
+            "quick_110.(VHS_VideoCombine): save_metadata": false,
+            "title": "segment-anything-2-video.json",
+            "quick_87.(Florence2Run): num_beams": 3,
+            "quick_114.(VHS_VideoCombine): crf": 0,
+            "quick_66.(DownloadAndLoadSAM2Model): segmentor": "video",
+            "quick_109.(VHS_LoadVideo): skip_first_frames": 0,
+            "quick_110.(VHS_VideoCombine): trim_to_audio": false,
+            "quick_87.(Florence2Run): fill_mask": true,
+            "quick_109.(VHS_LoadVideo): force_rate": 0,
+            "quick_93.(Florence2toCoordinates): batch": false,
+            "quick_111.(VHS_VideoCombine): pix_fmt": "yuv420p",
+            "quick_114.(VHS_VideoCombine): format": "video/h264-mp4",
+            "quick_87.(Florence2Run): max_new_tokens": 1024,
+            "quick_114.(VHS_VideoCombine): save_output": true,
+            "quick_114.(VHS_VideoCombine): pingpong": false,
+            "quick_87.(Florence2Run): task": "caption_to_phrase_grounding",
+            "quick_88.(DownloadAndLoadFlorence2Model): model": "microsoft/Florence-2-base",
+            "quick_111.(VHS_VideoCombine): save_output": true,
+            "quick_114.(VHS_VideoCombine): pix_fmt": "yuv420p",
+            "quick_109.(VHS_LoadVideo): select_every_nth": 1,
+            "quick_87.(Florence2Run): seed": -543794054,
+            "x": -1540.3397,
+            "y": -2955.0815,
+            "quick_111.(VHS_VideoCombine): crf": 0,
+            "quick_114.(VHS_VideoCombine): loop_count": 0,
+            "quick_109.(VHS_LoadVideo): force_size": "Disabled",
+            "quick_111.(VHS_VideoCombine): trim_to_audio": false,
+            "quick_66.(DownloadAndLoadSAM2Model): precision": "bf16",
+            "quick_66.(DownloadAndLoadSAM2Model): model": "sam2_hiera_small.safetensors",
+            "quick_109.(VHS_LoadVideo): custom_height": 512
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "seed",
+                "ioState": "input",
+                "type": "java.lang.Double",
+                "required": true
+            },
+            {
+                "label": "seed_",
+                "ioState": "output",
+                "type": "java.lang.Integer",
+                "required": true
+            }
+        ],
+        "id": -1652883435,
+        "class": "com.loom.graph.nodes.ModuleNode",
+        "properties": {
+            "origin": "C:\\Users\\elowbe-server\\AppData\\Roaming\\itch\\apps\\neu\\projects\\downloads\\ez-seed.neu",
+            "x": -2496.8208,
+            "y": -1200.0126,
+            "quick_enabled": true,
+            "title": "ez-seed.neu",
+            "quick_seed": -1,
+            "graph": "{\"nodes\": [\n    {\n        \"attributes\": [\n            {\n                \"label\": \"enabled_\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": true\n            },\n            {\n                \"label\": \"error\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": 251002955\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\"label\": \"\"},\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"output\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Double\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\"label\": \"\"},\n                \"label\": \"min\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Integer\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\"label\": \"\"},\n                \"label\": \"max\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Integer\",\n                \"required\": true\n            }\n        ],\n        \"id\": -2009989053,\n        \"class\": \"com.loom.graph.nodes.RandomIntegerNode\",\n        \"properties\": {\n            \"x\": 972.7512,\n            \"y\": -807.6369,\n            \"quick_enabled\": true,\n            \"quick_min\": 0,\n            \"quick_max\": 2147483646\n        }\n    },\n    {\n        \"attributes\": [\n            {\n                \"connected\": {\"label\": \"\"},\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": true\n            },\n            {\n                \"label\": \"enabled_\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\"label\": \"\"},\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"error\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\"label\": \"\"},\n                \"label\": \"value\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Double\",\n                \"required\": false\n            },\n            {\n                \"label\": \"output\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Double\",\n                \"required\": true\n            }\n        ],\n        \"id\": -1480196024,\n        \"class\": \"com.loom.graph.nodes.ModuleInputNode\",\n        \"properties\": {\n            \"quick_value\": -1,\n            \"x\": -2129.8728,\n            \"y\": -613.6115,\n            \"label\": \"seed\",\n            \"quick_enabled\": true,\n            \"type\": \"java.lang.Double\"\n        }\n    },\n    {\n        \"attributes\": [\n            {\n                \"label\": \"enabled_\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": true\n            },\n            {\n                \"label\": \"error\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": -1480196024\n                },\n                \"label\": \"input\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.String\",\n                \"required\": true\n            },\n            {\n                \"label\": \"output\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            }\n        ],\n        \"id\": -876347318,\n        \"class\": \"com.loom.graph.nodes.IsEmptyNode\",\n        \"properties\": {\n            \"quick_input\": \"\",\n            \"x\": -1213.0259,\n            \"y\": -920.81525,\n            \"quick_enabled\": true\n        }\n    },\n    {\n        \"attributes\": [\n            {\n                \"label\": \"enabled_\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": true\n            },\n            {\n                \"label\": \"error\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": -876347318\n                },\n                \"label\": \"input1\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\n                    \"label\": \"lessThan\",\n                    \"nodeID\": -1491861423\n                },\n                \"label\": \"input2\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": true\n            },\n            {\n                \"label\": \"output\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            }\n        ],\n        \"id\": 251002955,\n        \"class\": \"com.loom.graph.nodes.OrNode\",\n        \"properties\": {\n            \"x\": -325.47803,\n            \"y\": -943.30475,\n            \"quick_input2\": false,\n            \"quick_input1\": false,\n            \"quick_enabled\": true\n        }\n    },\n    {\n        \"attributes\": [\n            {\n                \"label\": \"enabled_\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": true\n            },\n            {\n                \"label\": \"error\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\"label\": \"\"},\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\"label\": \"\"},\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": 251002955\n                },\n                \"label\": \"condition\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": -2009989053\n                },\n                \"label\": \"trueValue\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": -1480196024\n                },\n                \"label\": \"falseValue\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"output\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"else\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            }\n        ],\n        \"id\": 906100813,\n        \"class\": \"com.loom.graph.nodes.IfNode\",\n        \"properties\": {\n            \"quick_condition\": false,\n            \"x\": 1788.8057,\n            \"y\": -247.02924,\n            \"quick_enabled\": true\n        }\n    },\n    {\n        \"attributes\": [\n            {\n                \"label\": \"enabled_\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": true\n            },\n            {\n                \"label\": \"error\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": -1480196024\n                },\n                \"label\": \"value1\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Double\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"value2\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Double\",\n                \"required\": true\n            },\n            {\n                \"label\": \"lessThan\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"label\": \"equal\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            },\n            {\n                \"label\": \"greaterThan\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": false\n            }\n        ],\n        \"id\": -1491861423,\n        \"class\": \"com.loom.graph.nodes.NumericComparisonNode\",\n        \"properties\": {\n            \"x\": -1308.156,\n            \"y\": -29.530487,\n            \"quick_value2\": 0,\n            \"quick_enabled\": true,\n            \"quick_value1\": 0\n        }\n    },\n    {\n        \"attributes\": [\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": true\n            },\n            {\n                \"label\": \"enabled_\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"error\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": 906100813\n                },\n                \"label\": \"value\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Integer\",\n                \"required\": false\n            }\n        ],\n        \"id\": -524550062,\n        \"class\": \"com.loom.graph.nodes.ModuleOutputNode\",\n        \"properties\": {\n            \"quick_value\": 0,\n            \"x\": 2762.1145,\n            \"y\": -246.51727,\n            \"label\": \"seed_\",\n            \"quick_enabled\": true,\n            \"type\": \"java.lang.Integer\"\n        }\n    }\n]}"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "images",
+                    "nodeID": -561643500
+                },
+                "label": "array",
+                "ioState": "input",
+                "type": "java.util.ArrayList",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "index",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": true
+            }
+        ],
+        "id": -247791555,
+        "class": "com.loom.graph.nodes.IndexSelectorNode",
+        "properties": {
+            "x": -327.07535,
+            "y": -3163.488,
+            "quick_array": "",
+            "quick_enabled": true,
+            "quick_index": 0
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {"label": ""},
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "images",
+                    "nodeID": -561643500
+                },
+                "label": "array",
+                "ioState": "input",
+                "type": "java.util.ArrayList",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "index",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": true
+            }
+        ],
+        "id": 188284992,
+        "class": "com.loom.graph.nodes.IndexSelectorNode",
+        "properties": {
+            "x": -335.8269,
+            "y": -2693.8809,
+            "quick_array": "",
+            "quick_enabled": true,
+            "quick_index": 1
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {"label": ""},
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "images",
+                    "nodeID": -561643500
+                },
+                "label": "array",
+                "ioState": "input",
+                "type": "java.util.ArrayList",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "index",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": true
+            }
+        ],
+        "id": 309919811,
+        "class": "com.loom.graph.nodes.IndexSelectorNode",
+        "properties": {
+            "x": -341.00507,
+            "y": -2217.9224,
+            "quick_array": "",
+            "quick_enabled": true,
+            "quick_index": 2
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": -247791555
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "com.loom.Video",
+                "required": false
+            }
+        ],
+        "id": 2139357254,
+        "class": "com.loom.graph.nodes.ModuleOutputNode",
+        "properties": {
+            "quick_value": "",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "x": 361.9562,
+            "y": -3159.412,
+            "label": "box",
+            "quick_enabled": true,
+            "type": "com.loom.Video"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {"label": ""},
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": 188284992
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "com.loom.Video",
+                "required": false
+            }
+        ],
+        "id": -1408303031,
+        "class": "com.loom.graph.nodes.ModuleOutputNode",
+        "properties": {
+            "quick_value": "",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "x": 364.08676,
+            "y": -2699.4907,
+            "label": "mask",
+            "quick_enabled": true,
+            "type": "com.loom.Video"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {"label": ""},
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": 309919811
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "com.loom.Video",
+                "required": false
+            }
+        ],
+        "id": -738983860,
+        "class": "com.loom.graph.nodes.ModuleOutputNode",
+        "properties": {
+            "quick_value": "",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "x": 365.3813,
+            "y": -2235.6145,
+            "label": "color",
+            "quick_enabled": true,
+            "type": "com.loom.Video"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {"label": ""},
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {"label": ""},
+                "label": "value",
+                "ioState": "input",
+                "type": "com.loom.Video",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "com.loom.Video",
+                "required": true
+            }
+        ],
+        "id": -209125295,
+        "class": "com.loom.graph.nodes.ModuleInputNode",
+        "properties": {
+            "quick_value": "",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "x": -2499.4844,
+            "y": 181.86816,
+            "label": "video",
+            "quick_enabled": true,
+            "type": "com.loom.Video"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "images",
+                    "nodeID": -561643500
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "org.json.JSONArray",
+                "required": false
+            }
+        ],
+        "id": -600440665,
+        "class": "com.loom.graph.nodes.ModuleOutputNode",
+        "properties": {
+            "quick_value": "",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "x": -265.3491,
+            "y": -1572.8463,
+            "label": "videos",
+            "quick_enabled": true,
+            "type": "org.json.JSONArray"
+        }
+    }
+]}
